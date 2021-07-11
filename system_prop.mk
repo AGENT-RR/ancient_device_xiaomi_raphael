@@ -38,7 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.eyecare.brightness.level=5 \
     ro.displayfeature.histogram.enable=true \
     ro.hist.brightness.threshold=7 \
-    ro.sf.lcd_density=440 \
+    ro.sf.lcd_density=420 \
     ro.vendor.display.ad=1 \
     ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg \
     ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg \
@@ -48,8 +48,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.displayfeature.dc_backlight.enable=false \
     persist.fod.modified.dc_status=false \
     sys.displayfeature.hbm.enable=true
-    
-    # Fingerprint
+
+# Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.fp.fod=true \
     persist.vendor.sys.fp.fod.location.X_Y=445,1931 \
@@ -65,7 +65,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_gl_backpressure=1 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.enable_hwc_vds=1 \
+    debug.performance.tuning=1 \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+    hwui.disable_vsync=true \
     debug.cpurend.vsync=false
+
+# IOP
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.iop.enable_prefetch_ofr=1 \
+    vendor.iop.enable_uxe=0
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -80,6 +88,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q855-16947-1
+
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.core.ctl_max_cpu=4 \
+    ro.vendor.qti.core.ctl_min_cpu=2
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -140,8 +153,9 @@ PRODUCT_PROPERTY_OVERRIDES += debug.sf.earlyGl.sf.duration=13500000
 PRODUCT_PROPERTY_OVERRIDES += debug.sf.earlyGl.app.duration=21000000
 
 # Iorap
-iorapd.perfetto.enable=true
-iorapd.readahead.enable=true
+PRODUCT_PROPERTY_OVERRIDES += \
+    iorapd.perfetto.enable=true
+    iorapd.readahead.enable=true
 
 # Scroll optimization
 PRODUCT_PROPERTY_OVERRIDES += \
