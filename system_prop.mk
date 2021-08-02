@@ -60,6 +60,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.ime.kb_pad_port_b=1
 
+# Goodle Pixel props
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.model=Pixel
+    ro.product.brand=Google
+    ro.product.manufacturer=Google
+    ro.opa.eligible_device=true
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \
