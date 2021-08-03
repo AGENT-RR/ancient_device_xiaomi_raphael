@@ -15,7 +15,7 @@ PRODUCT_DEVICE := raphael
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := ancient_raphael
 
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -29,3 +29,4 @@ ANCIENT_OFFICIAL=true
 #TARGET_GAPPS_ARCH := arm64
 #IS_PHONE := true
 #ANCIENT_GAPPS := true
+#ANCIENT_WEEABO := true

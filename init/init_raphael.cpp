@@ -58,20 +58,17 @@ void load_dalvik_properties() {
 
 void load_raphaelglobal() {
     property_override("ro.build.product", "raphael");
-    property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "redfin-user 11 RQ3A.210705.001 7380771 release-keys");
+    property_override("ro.build.description", "redfin-user 11 RQ3A.210805.001.A1 7474174 release-keys");
 }
 
 void load_raphaelin() {
     property_override("ro.build.product", "raphaelin");
-    property_override("ro.product.device", "raphaelin");
-    property_override("ro.build.description", "redfin-user 11 RQ3A.210705.001 7380771 release-keys");
+    property_override("ro.build.description", "redfin-user 11 RQ3A.210805.001.A1 7474174 release-keys");
 }
 
 void load_raphael() {
     property_override("ro.build.product", "raphael");
-    property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "redfin-user 11 RQ3A.210705.001 7380771 release-keys");
+    property_override("ro.build.description", "redfin-user 11 RQ3A.210805.001.A1 7474174 release-keys");
 }
 
 
@@ -87,14 +84,14 @@ void vendor_load_properties() {
     } else {
         LOG(ERROR) << __func__ << ": unexcepted region!";
     }
-    
+
     property_override("ro.apex.updatable", "false");
-    
+
     // Safetynet Workaround
     property_override("ro.boot.verifiedbootstate", "green");
     property_override("ro.oem_unlock_supported", "0");
 
-    property_override("ro.build.fingerprint", "google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys");
+    property_override("ro.build.fingerprint", "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys");
 
     load_dalvik_properties();
 }

@@ -60,12 +60,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.ime.kb_pad_port_b=1
 
-# Goodle Pixel props
+# Google Pixel props
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.product.model=Pixel
-    ro.product.brand=Google
-    ro.product.manufacturer=Google
     ro.opa.eligible_device=true
+    ro.product.brand=google
+    ro.product.device=redfin
+    ro.product.manufacturer=Google
+    ro.product.model=Pixel 5
+    ro.product.name=redfin
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
