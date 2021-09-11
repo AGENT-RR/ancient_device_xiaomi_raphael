@@ -253,11 +253,11 @@
         <fqname>@2.1::IGoodixFingerprintDaemon/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.lineage.biometrics.fingerprint.inscreen</name>
+        <name>vendor.nxp.hardware.nfc</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.2</version>
         <interface>
-            <name>IFingerprintInscreen</name>
+            <name>INqNfc</name>
             <instance>default</instance>
         </interface>
     </hal>
