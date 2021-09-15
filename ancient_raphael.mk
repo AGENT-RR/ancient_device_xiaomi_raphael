@@ -15,8 +15,6 @@ PRODUCT_DEVICE := raphael
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := ancient_raphael
 
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys"
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 TARGET_BOOT_ANIMATION_RES := 1080
